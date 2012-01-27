@@ -25,6 +25,10 @@ class PathFinder
     build_graph(filepath)
   end
 
+  def get_nodelist ()
+    return @nodelist
+  end
+
   def build_graph(filepath)
     # de-serialize given graph and build a Graph-instance
     file = File.open(filepath)
